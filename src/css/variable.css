@@ -1,0 +1,8 @@
+:root {
+    --button-green: #BBF330;
+    --dark-green: #7EB101;
+    --yellow-main: #FFE550;
+    --black: #2C2C2C;
+    --white: #FFFFFF;
+    --shadow-fruit: radial-gradient(50.00% 50.00% at 50.00% 50.00%, #2F583F 0%, rgba(105, 105, 105, 0.00) 100%);
+}

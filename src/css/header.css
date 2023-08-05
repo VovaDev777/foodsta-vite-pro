@@ -1,0 +1,159 @@
+:root {
+    --button-green: #BBF330;
+    --dark-green: #7EB101;
+    --yellow-main: #FFE550;
+    --black: #2C2C2C;
+    --white: #FFFFFF;
+    --shadow-fruit: radial-gradient(50.00% 50.00% at 50.00% 50.00%, #2F583F 0%, rgba(105, 105, 105, 0.00) 100%);
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    margin-right: 30px;
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-link {
+    display: inline-block;
+    color: var(--black);
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.current {
+    position: relative;
+    color: var(--button-green);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--button-green);
+    text-decoration: underline;
+}
+
+.header-button {
+    display: none;
+    color: var(--black);
+    font-size: 13px;
+    font-family: inherit;
+    border-radius: 30px;
+    border: none;
+    padding: 6px 18px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 1.5em;
+    background-color: var(--button-green);
+}
+
+.header-button:hover,
+.header-button:focus {
+    background-color: var(--yellow-main);
+}
+
+.btn-open-menu {
+    background-color: transparent;
+    border: none;
+}
+
+.menu-open-icon {
+    fill: #212121;
+}
+
+.title {
+    color: var(--black);
+    font-size: 48px;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.main-text {
+    color: var(--black, #2C2C2C);
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.5em;
+}
+
+.main-button {
+    color: var(--black);
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    line-height: 1.5em;
+    text-align: right;
+    background-color: var(--button-green);
+}
+
+.main-button:hover,
+.main-button:focus,
+.main-button:active {
+    background-color: var(--yellow-main);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--yellow-main);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.container-menu {
+    position: relative;
+}
+
+.btn-close-menu {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    line-height: 0;
+    border-radius: 50%;
+    border: 1px solid #212121;
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+@media screen and (min-width:768px) {
+    .header-nav {
+        display: block;
+    }
+
+    .header-button {
+        display: block;
+    }
+
+    .btn-open-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
