@@ -1,3 +1,6 @@
+.hero-section{
+    padding: 60px 0 50px;
+}
 .hero-content-wrap{
     display: flex;
     flex-wrap: wrap;
@@ -32,4 +35,33 @@ cursor: pointer;
 
 }
 .hero-img {
+    display: none;
+}
+@media screen and (min-width:768px){
+    .hero-content-wrap{
+        flex-direction: column;
+    }
+    .main-title{
+        max-width: 537px;
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 44px;
+    }
+    .hero-text{
+        max-width: 336px;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+    .hero-btn {
+        max-width: 98px;
+    }
+    .hero-img{
+        display: block;
+        position: absolute;
+        top: 149px;
+        right: 40px;
+        border-radius: 320px;
+        border: 14px solid var(--yellow-main, #FFE550);
+    }
 }
