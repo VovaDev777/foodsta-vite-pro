@@ -6,6 +6,7 @@
     flex-wrap: wrap;
 }
 .main-title {
+    max-width: 280px;
     color: #2C2C2C;
 font-family: Roboto;
 font-size: 28px;
@@ -14,6 +15,7 @@ line-height: normal;
 margin-bottom: 28px;
 }
 .hero-text {
+    max-width: 266px;
     color: var(--black, #2C2C2C);
 font-family: Roboto;
 font-size: 14px;
