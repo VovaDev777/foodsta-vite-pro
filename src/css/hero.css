@@ -74,6 +74,39 @@ cursor: pointer;
         top: 149px;
         right: 40px;
     }
+    .slick-prev, .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 28px;
+        height: 34px;
+        padding: 0;
+        transform: translate(0, -50%);
+        cursor: pointer;
+        color: #000;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        background-color: #fff;
+        z-index: 2;
+    }
+    .slick-prev {
+        left: -5px;
+    }
+    .slick-next {
+        right: -5px;
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        font-family: 'slick';
+        font-size: 24px;
+        line-height: 1;
+        opacity: 1;
+        color: var(--yellow-main, #FFE550);
+        -webkit-font-smoothing: antialiased;
+    }
 }
 @media screen and (min-width:1280px){
     .hero-section{
@@ -90,6 +123,8 @@ cursor: pointer;
     .hero-img{
         width: 528px;
         height: 528px;
+        border-radius: 580px;
+        border: 26px solid var(--yellow-main, #FFE550);
     }
     .slider-position{
         width: 580px;
@@ -99,4 +134,18 @@ cursor: pointer;
         top: 14px;
         right: 14px;   
     }
+    .slick-prev, .slick-next{
+        width: 40px;
+        height: 48px;
+    }
+    .slick-prev:before, .slick-next:before{
+        font-size: 30px;
+    }
+    .slick-prev {
+        left: -7px;
+    }
+    .slick-next {
+        right: -7px;
+    }
+    
 }
