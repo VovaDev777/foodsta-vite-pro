@@ -1,6 +1,5 @@
 .hero-section{
     padding: 60px 0 50px;
-    /* position: relative; */
 }
 .hero-content-wrap{
     display: flex;
@@ -60,9 +59,6 @@ cursor: pointer;
     }
     .tasty-slider{
         display: block;
-        /* position: absolute;
-        top: 149px;
-        right: 40px; */
     }
     .hero-img{
         border-radius: 320px;
@@ -75,12 +71,11 @@ cursor: pointer;
         z-index: 1;
         top: 149px;
         right: 40px;
-        
     }
 }
 @media screen and (min-width:1280px){
     .hero-section{
-        padding: 159px 0 50px;
+        padding: 159px 0 0;
     }
     .main-title{
         max-width: 503px;
@@ -90,12 +85,16 @@ cursor: pointer;
     .hero-text{
         max-width: 511px;
     }
-    /* .tasty-slider{
-        top: 14px;
-        right: 14px;
-    } */
     .hero-img{
         width: 528px;
         height: 528px;
+    }
+    .slider-position{
+        width: 580px;
+        height: 580px;
+        position: absolute;
+        z-index: 1;
+        top: 14px;
+        right: 14px;   
     }
 }
