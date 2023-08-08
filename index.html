@@ -5,6 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/foodsta-vite-pro/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodsta</title>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
@@ -19,8 +21,8 @@
     />
     
 
-    <script type="module" crossorigin src="/foodsta-vite-pro/assets/index-82051d5a.js"></script>
-    <link rel="stylesheet" href="/foodsta-vite-pro/assets/index-e385face.css">
+    <script type="module" crossorigin src="/foodsta-vite-pro/assets/index-4c929a1d.js"></script>
+    <link rel="stylesheet" href="/foodsta-vite-pro/assets/index-a806ec67.css">
   </head>
   <body>
     
@@ -31,26 +33,86 @@
             <p class="hero-text">With just a few clicks, you can have your favorite meals delivered straight to your doorstep, no matter where you are. Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.</p>
             <button class="hero-btn">Order Now</button>
         </div>
-        <!-- <picture>
-            <source
-            media="(min-width: 1200px)"
-            srcset="./images/gallery/img-1_lg.jpg 1x, ./images/gallery/img-1_lg@2x.jpg 2x"
-            type="image/jpg"/>
-
-            <source
-            media="(min-width: 768px)"
-            srcset="./images/gallery/img-1_md.jpg 1x, ./images/gallery/img-1_md@2x.jpg 2x"
-            type="image/jpg"
-            />
-
-            
-        </picture> -->
-        <img class="hero-img"
-            src="/foodsta-vite-pro/assets/slider_photo1-5363728f.png" 
-            alt="Tasty Food"
-            width="292"
-            height="292">
+        <div class="slider-position">
+            <div class="tasty-slider">
+                <!-- <button class="hero-prev-btn">
+                    <svg class="slider-btn-icon">
+                        <use href="./img/icons.svg#icon-slider-prev"></use>
+                    </svg>
+                </button> -->
+                <div>
+                    <picture>
+                        <source
+                            media="(min-width: 1280px)"
+                            srcset="/foodsta-vite-pro/assets/slider_photo1-5363728f.png 1x, /foodsta-vite-pro/assets/slider_photo1@2x-484b17d4.png 2x"
+                            type="image/png"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="/foodsta-vite-pro/assets/tablet_slider1-a37a94f0.png 1x, /foodsta-vite-pro/assets/tablet_slider1@2x-17cc97db.png 2x"
+                            type="image/png"
+                        />
+                        <img 
+                        class="hero-img"
+                        src="/foodsta-vite-pro/assets/slider_photo1-5363728f.png" 
+                        alt="Tasty Food"
+                        width="292"
+                        height="292"
+                        loading="lazy">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source
+                            media="(min-width: 1280px)"
+                            srcset="/foodsta-vite-pro/assets/slider_photo2-313888e6.png 1x, /foodsta-vite-pro/assets/slider_photo2@2x-122f9705.png 2x"
+                            type="image/png"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="/foodsta-vite-pro/assets/tablet_slider2-0fe5e82e.png 1x, /foodsta-vite-pro/assets/tablet_slider2@2x-420fab7b.png 2x"
+                            type="image/png"
+                        />
+                        <img 
+                        class="hero-img"
+                        src="/foodsta-vite-pro/assets/slider_photo2-313888e6.png" 
+                        alt="Tasty Food"
+                        width="292"
+                        height="292"
+                        loading="lazy">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source
+                            media="(min-width: 1280px)"
+                            srcset="/foodsta-vite-pro/assets/slider_photo3-1ca21d56.png 1x, /foodsta-vite-pro/assets/slider_photo3@2x-1423c821.png 2x"
+                            type="image/png"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="/foodsta-vite-pro/assets/tablet_slider3-ed1360fb.png 1x, /foodsta-vite-pro/assets/tablet_slider3@2x-c304da74.png 2x"
+                            type="image/png"
+                        />
+                        <img 
+                        class="hero-img"
+                        src="/foodsta-vite-pro/assets/slider_photo3-1ca21d56.png" 
+                        alt="Tasty Food"
+                        width="292"
+                        height="292"
+                        loading="lazy">
+                    </picture>
+                </div>
+                <!-- <button class="hero-next-btn">
+                    <svg class="slider-btn-icon">
+                        <use href="./img/icons.svg#icon-slider-next"></use>
+                    </svg>
+                </button> -->
+            </div>
+        </div>
+        
     </div>
+    
 </section>
     <section>
   <div class="container">
@@ -98,5 +160,8 @@
     
 
     
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
